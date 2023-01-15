@@ -1,3 +1,4 @@
+![Group 25](https://user-images.githubusercontent.com/97843629/212529496-cc2da3c9-811b-4ace-b542-0ec0673d27d8.png)
 
 # Overview of the website
 The main goal of our website is we want pregnant strong women out there to think about their decision wisely 
