@@ -15,10 +15,6 @@ The website consists of three sections
 ## Video Demonstration -
 The video demonstration of the application is uploaded to Youtube
 
-## Tech Stack Used -
-
-
-
 [here](https://www.youtube.com/watch?v=6STR7xM_qzY&feature=youtu.be)
 
 
