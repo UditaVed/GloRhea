@@ -6,13 +6,13 @@ export default[
         link:"https://www.aileengeorgecounselling.com/"
     },
     {
-        bribe: "I am Viv I have been awarded the most warm and nurturing coach award by the titans group of councellors.My mission is to make people with any backgrounds feel comfortable and help them regain their ressilence  and have confidence on themselves.",
+        bribe: "I am Viv I have been awarded the most warm and nurturing coach award by the titans group of councellors.My mission is to make people with any backgrounds feel comfortable.",
         circlephoto: "consult/cons01.svg",
         bgPhoto:"consult/bgCon02.svg",
         link:"https://www.vivallen.com/"
     },
     {
-        bribe: "Hello ladies, I am Hartney a therapist wanting to let people find clarity, To save you some research time I'd like to tell you I hold a wealth of experience and have the knack of getting to the root of the problem to not just let you feel good today.",
+        bribe: "Hello ladies, I am Hartney a therapist wanting to let people find clarity,I hold a wealth of experience and have the knack of getting to the root of the problem .",
         circlephoto: "consult/cons02.svg",
         bgPhoto:"consult/bgCon03.svg",
         link:"https://www.healthathart.co.uk/"

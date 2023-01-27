@@ -61,7 +61,7 @@ export default function App() {
       <motion.div  variants={staggerContainer}
       initial="hidden"
       whileInView="show"
-      viewport={{once:true,amount:0.25}}className="flex-wrap justify-center items-center gap-10 flex flex-col md:flex-row w-[80%] mx-auto">
+      viewport={{once:true,amount:0.2}}className="flex-wrap justify-center items-center gap-10 flex flex-col md:flex-row w-[80%] mx-auto">
         {cards}
       </motion.div>
       <motion.div

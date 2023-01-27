@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <footer className="footer items-center p-4 bg-[#c1afaccc] text-neutral-content">    
+    <footer className="footer items-center p-4 bg-[#c1afaccc] ">    
   <div className="items-center grid-flow-col">
   <img src='rose.png' width={50} height={50} className="fill-current rounded-full mx-4"/>
   <p>Copyright © 2023 - All right reserved</p>

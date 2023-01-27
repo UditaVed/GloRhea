@@ -14,7 +14,7 @@ const FAQ = () => {
 
     id="FAQ" className="gap-1 flex flex-col p-4 sm:p-12  bg-[#E5E2DE] items-center ">
       <div className="flex justify-center align-middle gap-4  h-[20vh] w-full">
-        <div className=" sm:border-x-[0.5rem] rounded-full sm:rounded-full  border-[#E6C1AA] w-[70vw] text-center h-fit py-7  bg-[#E6C1AA] text-white shadow-xl  ">
+        <div className=" sm:border-x-[0.5rem] rounded-full sm:rounded-full  border-[#E6C1AA] w-fit text-center  h-fit py-7 px-4  bg-[#E6C1AA] text-white shadow-xl  ">
           {" "}
       
            <TypingText title="We have answers to your queries"/>
