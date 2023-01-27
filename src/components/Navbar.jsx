@@ -22,11 +22,10 @@ function Navbar() {
   </div>
   <div className="navbar-center hidden lg:flex text-white ">
     <ul className="menu menu-horizontal gap-12 px-1">
-    <li className='border-l px-2'><a href='#Home'>Home</a></li>
-    <li className='border-l px-2'><a href='#FAQ'>FAQ</a></li>
-    <li className='border-l px-2'><a href='#Counsellor'>Counsellors</a>
-    <li className='border-l px-2'><a href='#Stories'>Stories</a></li>
-    </li>
+    <li className='border-l px-2'><a className="active:bg-[#ba9b9b]" href='#Home'>Home</a></li>
+    <li className='border-l px-2'><a className="active:bg-[#ba9b9b]" href='#FAQ'>FAQ</a></li>
+    <li className='border-l px-2'><a className="active:bg-[#ba9b9b]" href='#Counsellor'>Counsellors</a> </li>
+    <li className='border-l px-2'><a className="active:bg-[#ba9b9b]" href='#Stories'>Stories</a></li>
     </ul>
   </div>
   <div className="navbar-end hidden sm:flex  ">
