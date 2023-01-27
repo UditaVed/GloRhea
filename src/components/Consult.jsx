@@ -8,7 +8,9 @@ export default function Consult(props)
     return (
         <motion.div id="Counsellor" variants={textVariant2}
         initial="hidden"
-        whileInView="show" className="carousel mt-10">
+        whileInView="show"
+        viewport={{ once: true, amount: 0.25 }}
+        className="carousel mt-10">
         {
 
             dataConsult.map(({bribe,circlephoto,bgPhoto,link},index)=>{

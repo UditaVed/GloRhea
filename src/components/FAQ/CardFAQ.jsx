@@ -9,7 +9,7 @@ const CardFAQ = ({ Query, Quote, Analysis, BgQuoteColor,Img,Key }) => {
     <motion.div
     variants={fadeIn('left', 'spring', index * 0.5, 0.75)}
       tabIndex={0}
-      className="collapse collapse-arrow border border-base-300 bg-[#a9a7a7] rounded-box  "
+      className="collapse collapse-arrow border  bg-[#f1f1f1] rounded-box text-black  "
     >
     <div className="flex gap-2 ">
     <div class="hidden sm:block w-[15%] p-4 rounded-3xl overflow-hidden  ">
