@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { textContainer, textVariant2 } from '../utils/motion';
 
-export const TypingText = ({ title, textStyles,Class = `text-xl font-bold sm:text-5xl ` }) => (
+export const TypingText = ({ title, textStyles,Class = ` font-bold text-[1rem] sm:text-[2rem] md:text-[3.5rem] ` }) => (
   <motion.p
     variants={textContainer}
     className={ `${textStyles} ${Class} `}

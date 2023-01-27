@@ -29,8 +29,8 @@ function Navbar() {
     </li>
     </ul>
   </div>
-  <div className="navbar-end hidden sm:flex ">
-    <a href="https://discord.gg/w5UaubDdk9" className="btn border-none bg-[#BA9B9B] hover:bg-[#875c5c]  ">Join Community</a>
+  <div className="navbar-end hidden sm:flex  ">
+    <a href="https://discord.gg/w5UaubDdk9" className="btn border-none bg-[#BA9B9B] hover:bg-[#875c5c] text-white ">Join Community</a>
    
   </div>
 </motion.div>
