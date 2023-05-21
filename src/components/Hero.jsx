@@ -16,7 +16,7 @@ const Hero = () => {
       </div>  
       <motion.div variants={fadeIn('down', 'spring', 1 , 2)} className="w-[80%] sm:w-[50%] h-full mx-auto ">
         <img src="heroAbout.svg" className="hidden  object-cover lg:block"/>
-        <div className="block lg:hidden text-sm p-4 w-[100%] sm:text-xl sm:p-20 font-bold text-[#A5836F] bg-white border shadow-md italic  ">
+        <div className="block lg:hidden text-sm p-5 w-[100%] sm:text-xl sm:p-20 font-bold text-[#A5836F] bg-white border shadow-md italic ">
         Abortion is a deeply personal decision, and one that is not made
         lightly. Women deserve compassion and support, not judgment and
         stigma.
