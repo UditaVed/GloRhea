@@ -21,6 +21,8 @@ The video demonstration of the application is uploaded to Youtube
 ## Tech Stack
 
 **Client:** React, Vite, TailwindCSS
+
 **Library:** Framer Motion
+
 **Design:** Figma
 
