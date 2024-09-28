@@ -21,7 +21,7 @@ const FAQ = () => {
           
         </div>
       </div>
-      <div className="gap-4 flex flex-col p-4 sm:p-12 sm:w-[80%] justify-center">
+      <div className="gap-4 flex flex-col p-2 md:p-12 sm:w-[80%] justify-center">
         {FAQdata.map(({ Query, Quotes, Analysis }, index) => {
           var color = [
             { colors: "bg-[#F9BF96]" },
