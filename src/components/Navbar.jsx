@@ -1,6 +1,6 @@
 import React from 'react'
 import {motion} from "framer-motion"
-function Navbar() {
+function Navbar({onLoad}) {
   
   return (
     <motion.div initial={{opacity:0  }} animate={{opacity:1,scale:1}} transition={{duration:1}}  className="navbar bg-[#e5c7c3cc] h-[10vh] py-4 fixed z-40">
@@ -17,7 +17,7 @@ function Navbar() {
 
       </ul>
     </div>
-    <img src="GloRhea.svg" width={80} hight={45}alt="logo"/>
+    <img src="GloRhea.svg" width={80} hight={45} alt="logo" onLoad={()=>{ console.log("trigger"); onLoad();}}/>
     <a className="btn btn-ghost normal-case text-[#D5596C] text-3xl">GloRhea</a>
   </div>
   <div className="navbar-center hidden lg:flex text-white ">

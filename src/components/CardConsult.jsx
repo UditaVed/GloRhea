@@ -1,6 +1,6 @@
 import React from "react";
 
-const CardConsult = ({ About, Image, SlideNum, BgImage,Link }) => {
+const CardConsult = ({ About, Image, SlideNum, BgImage,Link,onLoad }) => {
   var current = "slide" + SlideNum;
   if (SlideNum == 1) {
     var prev = "invisible";
@@ -21,7 +21,7 @@ const CardConsult = ({ About, Image, SlideNum, BgImage,Link }) => {
         <div className="flex  items-center justify-center w-full h-fit md:h-fit md:p-4 ">
           <div className="flex flex-col items-center justify-center pt-4 md:flex-row card card-side bg-white shadow-xl w-[80%] md:w-[50%] h-[50%]">
             
-              <img src={Image} width={100} height={100}  className=" mx-8" alt="Movie" />
+              <img src={Image} width={100} height={100}  className=" mx-8" alt="Movie" onLoad={onLoad} />
          
             <div className=" text-[#9F8C91] p-4 ">
               <p className=" ">{About}</p>

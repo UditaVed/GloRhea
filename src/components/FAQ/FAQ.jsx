@@ -4,7 +4,7 @@ import FAQdata from "../FAQdata.js";
 import {motion} from "framer-motion"
 import { TypingText } from "../CustomTexts";
 import { slideIn,staggerContainer,textVariant } from "../../utils/motion";
-const FAQ = () => {
+const FAQ = ({onLoad}) => {
   return (
     <motion.div 
     variants={staggerContainer}
@@ -41,6 +41,7 @@ const FAQ = () => {
               Analysis={Analysis}
               BgQuoteColor={bgQuoteColor}
               Img={image}
+              onLoad={onLoad}
             />
           );
         })}

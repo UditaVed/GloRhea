@@ -17,7 +17,7 @@ export default function Consult(props)
                 console.log(bgPhoto)
 
                 return(
-                    <CardConsult key={index} Image ={circlephoto} BgImage={bgPhoto} About={bribe} SlideNum={index + 1} Link={link}/>
+                    <CardConsult key={index} Image ={circlephoto} BgImage={bgPhoto} About={bribe} SlideNum={index + 1} Link={link} onLoad={props.onLoad}/>
                 )
             })
 

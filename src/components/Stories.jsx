@@ -10,7 +10,7 @@ export default function Stories(props)
     var num = index%2;
     return (
             <motion.div variants={fadeIn('right', 'spring', index * 0.5, 0.75)} className={`card sm:w-80 ${num?'bg-[#B08585]':`bg-[#E7CAB2]` } h-96 shadow-xl p-0 text-left`}>
-            <figure><img src={props.img} alt="Shoes" /></figure>
+            <figure><img src={props.img} alt="Shoes" onLoad={props.onLoad}/></figure>
             <div className="card-body">
                 <h2 className={`card-title ${textColor[num]}`}>{props.title}</h2>
             </div>
