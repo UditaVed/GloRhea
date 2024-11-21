@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from 'framer-motion';
 import { fadeIn } from '../../utils/motion';
 
-const CardFAQ = ({ Query, Quote, Analysis, BgQuoteColor,Img,Key }) => {
+const CardFAQ = ({ Query, Quote, Analysis, BgQuoteColor,Img,Key,onLoad }) => {
   var index =  Key;
  
   return (
@@ -12,8 +12,8 @@ const CardFAQ = ({ Query, Quote, Analysis, BgQuoteColor,Img,Key }) => {
       className="collapse collapse-arrow border  bg-[#f1f1f1] rounded-box text-black  "
     >
     <div className="flex gap-2 ">
-    <div class="hidden sm:block w-[15%] p-4 rounded-3xl overflow-hidden  ">
-            <img src={Img} alt="" className=" w-full h-full  rounded-3xl object-cover"/>
+    <div class="hidden sm:block  md:w-[15%] p-2 md:p-4 rounded-3xl overflow-hidden  ">
+            <img src={Img} alt="" className=" w-full h-full  rounded-3xl object-cover" onLoad={onLoad}/>
           </div>
     <div className="sm:w-[80%]  align-center flex items-centerOccaecat labore est proident elit eu proident.">
     <div className="collapse-title text-sm sm:text-xl font-medium items-center">

@@ -2,7 +2,7 @@ import React from "react";
 import {motion} from "framer-motion"
 import { fadeIn ,staggerContainer} from "../utils/motion";
 
-const Hero = () => {
+const Hero = ({onLoad}) => {
   return (
     <motion.div
     variants={staggerContainer}
@@ -12,7 +12,7 @@ const Hero = () => {
     id="Home" className="hero min-h-[100vh] pt-[10vh] justift-center gap-16 sm:items-start">
       <div className="hero-content bg-none flex-col lg:flex-row items-start p-0  ">
       <div className="h-full w-full flex justify-center -ml-4 ">
-      <motion.img variants={fadeIn('right', 'spring', 1 , 2)} src="Rhea.svg" className="md:-ml-10 md:pt-10 rounded-lg h-[80%] w-[80%] " />
+      <motion.img variants={fadeIn('right', 'spring', 1 , 2)} src="Rhea.svg" className="md:-ml-10 md:pt-10 rounded-lg h-[80%] w-[80%] " onLoad={onLoad} onError={(e) => console.error("Image failed to load:", e)} />
       </div>  
       <motion.div variants={fadeIn('down', 'spring', 1 , 2)} className="w-[80%] sm:w-[50%] h-full mx-auto ">
         <img src="heroAbout.svg" className="hidden  object-cover lg:block"/>

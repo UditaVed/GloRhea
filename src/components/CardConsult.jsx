@@ -1,6 +1,6 @@
 import React from "react";
 
-const CardConsult = ({ About, Image, SlideNum, BgImage,Link }) => {
+const CardConsult = ({ About, Image, SlideNum, BgImage,Link,onLoad }) => {
   var current = "slide" + SlideNum;
   if (SlideNum == 1) {
     var prev = "invisible";
@@ -18,16 +18,16 @@ const CardConsult = ({ About, Image, SlideNum, BgImage,Link }) => {
       <img src={BgImage} className="w-full" />
       <div className="absolute h-full w-full ">
       <div className="flex h-full items-center justify-center ">
-        <div className="flex  items-center justify-center w-full md:h-fit h-full md:p-4 ">
+        <div className="flex  items-center justify-center w-full h-fit md:h-fit md:p-4 ">
           <div className="flex flex-col items-center justify-center pt-4 md:flex-row card card-side bg-white shadow-xl w-[80%] md:w-[50%] h-[50%]">
             
-              <img src={Image} width={100} height={100}  className=" mx-8" alt="Movie" />
+              <img src={Image} width={100} height={100}  className=" mx-8" alt="Movie" onLoad={onLoad} />
          
             <div className=" text-[#9F8C91] p-4 ">
-              <p classname>{About}</p>
+              <p className=" ">{About}</p>
               <div className="card-actions justify-start">
               <a href={Link}>
-              <button className="btn bg-[#9F8C91] text-white border-none px-10 my-4 rounded-4xl">
+              <button className="btn bg-[#9F8C91] text-white border-none px-10 sm:my-4 rounded-4xl">
               Join Session
               </button>
               </a> 

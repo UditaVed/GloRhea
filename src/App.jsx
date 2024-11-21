@@ -1,6 +1,4 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import React from "react";
+import React, { useState,useEffect } from "react";
 import Stories from "./components/Stories";
 import data from "./components/data";
 import { Navbar, Hero, FAQ } from "./components";
@@ -10,38 +8,59 @@ import Consult from "./components/Consult";
 import Footer from "./components/Footer";
 import { motion } from "framer-motion";
 import {
-  slideIn,
   staggerContainer,
   textVariant2,
   textVariant,
 } from "./utils/motion";
 import { TypingText } from "./components/CustomTexts";
 
+
 export default function App() {
+  const [pageLoaded, setPageLoaded] = useState(false)
+  const [totalImageLoaded, setTotalImageLoaded] = useState(0)
+
+  const handleImageLoad = () => {
+    setTotalImageLoaded((prev) => prev + 1);
+  };
   const cards = data.map((item,index) => {
-    return <Stories key={index} Key={index} img={item.coverImg} title={item.title} />;
+    return <Stories key={index} Key={index} img={item.coverImg} title={item.title} onLoad={handleImageLoad} />;
   });
+  useEffect(()=>{
+    if(totalImageLoaded==20){
+      setPageLoaded(true);
+      console.log("Page Loaded");
+    }
+  },[totalImageLoaded])
+  const loadingOverlay = (
+    <div className="h-screen w-screen fixed top-0 left-0 z-50 bg-white text-center text-black flex justify-center items-center">
+      <div className="animate-pulse font-philosopher text-xl sm:text-2xl md:4xl lg:8xl">
+        Preparing the page...
+        <p className="animate-bounce"></p>
+      </div>
+    </div>
+  );
+ 
   return (
     <div className=" font-philosopher ">
-      <Navbar />
-      <Hero />
-      <FAQ />
+      <Navbar onLoad={handleImageLoad} />
+      <Hero onLoad={handleImageLoad} />
+      <FAQ  onLoad={handleImageLoad} />
       <div className="flex justify-center align-middle items-center  h-[20vh] w-full">
-        <div className="  rounded-full sm:rounded-full w-[70vw] text-center h-fit py-7 bg-[#9F8C91] text-white shadow-xl  ">
+        <div className="  rounded-full sm:rounded-full w-fit text-center h-fit px-12 py-7 bg-[#9F8C91] text-white shadow-xl  ">
           {" "}
           <motion.h1
             variants={textVariant2}
             initial="hidden"
             whileInView="show"
             viewport={{ once: true, amount: 0.25 }}
-            className="text-xl italic sm:text-5xl  "
+            className="text-xl italic sm:text-2xl md:text-2xl  "
           >
             " Channel Your thoughts with an expert "
           </motion.h1>
         </div>
       </div>
 
-      <Consult />
+      <Consult onLoad={handleImageLoad} />
       <motion.div
         variants={staggerContainer}
         initial="hidden"
@@ -71,9 +90,11 @@ export default function App() {
         viewport={{ once: true, amount: 0.35 }}
         className="py-24"
       >
-        <Community />
+        <Community onLoad={handleImageLoad} />
       </motion.div>
       <Footer />
+      {!pageLoaded && loadingOverlay}
     </div>
+    
   );
 }
